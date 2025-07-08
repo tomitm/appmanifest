@@ -2,7 +2,7 @@
   "name": "Web App Manifest Generator",
   "short_name": "App Manifest",
   "description": "A generator to help developers create Web App Manifests",
-  "lang": "en-US",
+  "lang": "en-CA",
   "start_url": "/appmanifest/",
   "scope": "/appmanifest/",
   "display": "standalone",
@@ -10,34 +10,38 @@
   "theme_color": "#0275d8",
   "icons": [
     {
-      "src": "res/icon_hi_res_512.png",
+      "src": "icons/icon_hi_res_512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "res/icon_xxxhdpi_192.png",
+      "src": "icons/icon_xxxhdpi_192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "res/icon_xxhdpi_144.png",
+      "src": "icons/icon_xxhdpi_144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "res/icon_xhdpi_96.png",
+      "src": "icons/icon_xhdpi_96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "res/icon_hdpi_72.png",
+      "src": "icons/icon_hdpi_72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "res/icon_mdpi_48.png",
+      "src": "icons/icon_mdpi_48.png",
       "sizes": "48x48",
       "type": "image/png"
     }
+  ],
+  "categories": [
+    "productivity",
+    "utilities"
   ]
 }

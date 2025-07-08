@@ -1,0 +1,66 @@
+@import url("@awesome.me/webawesome/dist/styles/webawesome.css");
+@import url("@awesome.me/webawesome/dist/styles/themes/default.css");
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: var(--wa-color-blue-95);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.wa-dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--wa-color-gray-10);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+} */
+
+.container {
+  max-width: 120ch;
+  margin: 32px auto;
+}
+
+@media screen and (max-width: calc(120ch + 96px)) {
+  .container {
+    margin: 32px 16px;
+  }
+}
+
+wa-card {
+  margin-top: var(--wa-space-m);
+  margin-bottom: var(--wa-space-m);
+}
+
+wa-card h2 {
+  font-size: var(--wa-font-size-l);
+  margin-bottom: var(--wa-space-s);
+}
+
+wa-tab-panel {
+  --padding: var(--wa-space-s) 0;
+}
+
+.wa-grid {
+  --min-column-size: 40ch;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+table td:last-child {
+  width: 196px;
+}

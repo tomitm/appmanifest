@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="en-US" source-language="en-CA" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s22fad2ad9862e5b0">
+  <source>Edit an existing manifest file</source>
+  <target>Edit an existing manifest file</target>
+</trans-unit>
+<trans-unit id="s3914cb410fca44d4">
+  <source>Import</source>
+  <target>Import</target>
+</trans-unit>
+<trans-unit id="s5c67b6c66029e5b2">
+  <source>Platform</source>
+  <target>Platform</target>
+</trans-unit>
+<trans-unit id="s41bce173213e0975">
+  <source>App Store</source>
+  <target>App Store</target>
+</trans-unit>
+<trans-unit id="sf9aee319a006c9b4">
+  <source>Add</source>
+  <target>Add</target>
+</trans-unit>
+<trans-unit id="s64ef2a6c2dd1d3d1">
+  <source>Edit</source>
+  <target>Edit</target>
+</trans-unit>
+<trans-unit id="sdc673e73b5c13aea">
+  <source>Delete</source>
+  <target>Delete</target>
+</trans-unit>
+<trans-unit id="s61eacb19db252f5e">
+  <source>URL</source>
+  <target>URL</target>
+</trans-unit>
+<trans-unit id="s3e0b42b56e05829d">
+  <source>Sizes</source>
+  <target>Sizes</target>
+</trans-unit>
+<trans-unit id="sd2223afb7d6b100d">
+  <source>Type</source>
+  <target>Type</target>
+</trans-unit>
+<trans-unit id="s6d9e89e9aa685f21">
+  <source>Purpose</source>
+  <target>Purpose</target>
+</trans-unit>
+<trans-unit id="sef49aec68fd1dc66">
+  <source>Name</source>
+  <target>Name</target>
+</trans-unit>
+<trans-unit id="s6c34e6af1c0f8b4c">
+  <source>Short Name</source>
+  <target>Short Name</target>
+</trans-unit>
+<trans-unit id="s63d894b1ddb06289">
+  <source>Description</source>
+  <target>Description</target>
+</trans-unit>
+<trans-unit id="s61e136c0658e27d5">
+  <source>Protocol</source>
+  <target>Protocol</target>
+</trans-unit>
+<trans-unit id="s7c69f9837e30ba26">
+  <source>Form Factor</source>
+  <target>Form Factor</target>
+</trans-unit>
+<trans-unit id="s145f5cd5e3ea3ee9">
+  <source>App ID</source>
+  <target>App ID</target>
+</trans-unit>
+<trans-unit id="s6252e26d19e9c1f7">
+  <source>An app-like experience, no browser UI, only system UI</source>
+  <target>An app-like experience, no browser UI, only system UI</target>
+</trans-unit>
+<trans-unit id="s1becded2eea3cc8f">
+  <source>No browser or system UI shown</source>
+  <target>No browser or system UI shown</target>
+</trans-unit>
+<trans-unit id="sd01d9a271c7940c5">
+  <source>Minimal set of navigation UI</source>
+  <target>Minimal set of navigation UI</target>
+</trans-unit>
+<trans-unit id="s151e02383e34d797">
+  <source>Typical browser tab or window</source>
+  <target>Typical browser tab or window</target>
+</trans-unit>
+<trans-unit id="s1125d159f7e64df5">
+  <source>Display</source>
+  <target>Display</target>
+</trans-unit>
+<trans-unit id="s31bf1464d6e1e996">
+  <source>Standalone</source>
+  <target>Standalone</target>
+</trans-unit>
+<trans-unit id="s4b10acae683d2978">
+  <source>Fullscreen</source>
+  <target>Fullscreen</target>
+</trans-unit>
+<trans-unit id="s8974343fd16d1ba2">
+  <source>Minimal UI</source>
+  <target>Minimal UI</target>
+</trans-unit>
+<trans-unit id="s6607f3c90e5c7daf">
+  <source>Browser</source>
+  <target>Browser</target>
+</trans-unit>
+<trans-unit id="s2b20d69532344cb8">
+  <source>Add multiple images at once</source>
+  <target>Add multiple images at once</target>
+</trans-unit>
+<trans-unit id="s8c8d5667c31631be">
+  <source>Web App Manifest Generator</source>
+  <target>Web App Manifest Generator</target>
+</trans-unit>
+<trans-unit id="s7d4ae6110b6a925e">
+  <source>Read more on MDN</source>
+  <target>Read more on MDN</target>
+</trans-unit>
+<trans-unit id="s1e8fa119b58ba44e">
+  <source>MDN</source>
+  <target>MDN</target>
+</trans-unit>
+<trans-unit id="s7a923bf0674c0997">
+  <source>Read the specification</source>
+  <target>Read the specification</target>
+</trans-unit>
+<trans-unit id="sb5fea4250aa2891e">
+  <source>Spec</source>
+  <target>Spec</target>
+</trans-unit>
+<trans-unit id="s324e59566027e685">
+  <source>View source on GitHub</source>
+  <target>View source on GitHub</target>
+</trans-unit>
+<trans-unit id="sb9d5b33550653232">
+  <source>Web App Manifests are one of the key pieces to making your web app look and feel like a native app.</source>
+  <target>Web App Manifests are one of the key pieces to making your web app look and feel like a native app.</target>
+</trans-unit>
+<trans-unit id="s31f1afc1bfe1cb3a">
+  <source>Learn more</source>
+  <target>Learn more</target>
+</trans-unit>
+<trans-unit id="h3bb7fef15fc1f3e4">
+  <source>While everything is optional, once <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/install-criteria/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>install criteria<x id="1" equiv-text="&lt;/a&gt;"/> is met, some browsers will automatically display an install banner for your app</source>
+  <target>While everything is optional, once <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/install-criteria/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>install criteria<x id="1" equiv-text="&lt;/a&gt;"/> is met, some browsers will automatically display an install banner for your app</target>
+</trans-unit>
+<trans-unit id="s19a59ae1221bee23">
+  <source>Your Web App</source>
+  <target>Your Web App</target>
+</trans-unit>
+<trans-unit id="s30518a3cb1b0b097">
+  <source>Name of your web app</source>
+  <target>Name of your web app</target>
+</trans-unit>
+<trans-unit id="s75b0d147a676487a">
+  <source>Theme colour</source>
+  <target>Theme color</target>
+</trans-unit>
+<trans-unit id="s0e26df0817303b4f">
+  <source>Colour used in the browser and system UI, to help make your app immersive</source>
+  <target>Color used in the browser and system UI, to help make your app immersive</target>
+</trans-unit>
+<trans-unit id="s6caab01b66d5b847">
+  <source>Background colour</source>
+  <target>Background color</target>
+</trans-unit>
+<trans-unit id="hd5e5da6b31bcad9a">
+  <source>This is typically your <x id="0" equiv-text="&lt;code&gt;"/>&lt;body&gt;<x id="1" equiv-text="&lt;/code&gt;"/> background colour, used to set the background colour until the stylesheets for your app are loaded.</source>
+  <target>This is typically your <x id="0" equiv-text="&lt;code&gt;"/>&lt;body&gt;<x id="1" equiv-text="&lt;/code&gt;"/> background color, used to set the background color until the stylesheets for your app are loaded.</target>
+</trans-unit>
+<trans-unit id="se622ff3c86338b41">
+  <source>App Manifest</source>
+  <target>App Manifest</target>
+</trans-unit>
+<trans-unit id="sea5e9bd7c599a8f5">
+  <source>This will be used when there is insufficient space to display the full name, such as the homescreen</source>
+  <target>This will be used when there is insufficient space to display the full name, such as the homescreen</target>
+</trans-unit>
+<trans-unit id="s47ebf3a8fb3b10c1">
+  <source>Orientation</source>
+  <target>Orientation</target>
+</trans-unit>
+<trans-unit id="sf999d4199ff4542d">
+  <source>Any</source>
+  <target>Any</target>
+</trans-unit>
+<trans-unit id="s6be9a291653c4f76">
+  <source>Natural</source>
+  <target>Natural</target>
+</trans-unit>
+<trans-unit id="s3bb9ed9dd24e9172">
+  <source>Landscape</source>
+  <target>Landscape</target>
+</trans-unit>
+<trans-unit id="s9aa65d33ad30ab3f">
+  <source>Landscape (Primary)</source>
+  <target>Landscape (Primary)</target>
+</trans-unit>
+<trans-unit id="sd12213e4bba39637">
+  <source>Landscape (Secondary)</source>
+  <target>Landscape (Secondary)</target>
+</trans-unit>
+<trans-unit id="safd96a5026e4555a">
+  <source>Portrait</source>
+  <target>Portrait</target>
+</trans-unit>
+<trans-unit id="s1cea7ced7ee205b7">
+  <source>Portrait (Primary)</source>
+  <target>Portrait (Primary)</target>
+</trans-unit>
+<trans-unit id="s5b3f0b4fd535aa4f">
+  <source>Portrait (Secondary)</source>
+  <target>Portrait (Secondary)</target>
+</trans-unit>
+<trans-unit id="sb80221f432f48666">
+  <source>Start URL</source>
+  <target>Start URL</target>
+</trans-unit>
+<trans-unit id="sfa0ff06b6443c00e">
+  <source>Your homescreen shortcut will load this URL</source>
+  <target>Your homescreen shortcut will load this URL</target>
+</trans-unit>
+<trans-unit id="s7d61376257220dab">
+  <source>Scope</source>
+  <target>Scope</target>
+</trans-unit>
+<trans-unit id="scb18c49b391d8605">
+  <source>The scope of your domain that this manifest applies to</source>
+  <target>The scope of your domain that this manifest applies to</target>
+</trans-unit>
+<trans-unit id="sefcf950b3cc4fc3b">
+  <source>Language</source>
+  <target>Language</target>
+</trans-unit>
+<trans-unit id="s088e3807b53946aa">
+  <source>en</source>
+  <target>en</target>
+</trans-unit>
+<trans-unit id="sc3e7bbc39362adb0">
+  <source>The primary language for the name, short name and description properties.</source>
+  <target>The primary language for the name, short name and description properties.</target>
+</trans-unit>
+<trans-unit id="s616575a0f7a5eb3f">
+  <source>Text Direction</source>
+  <target>Text Direction</target>
+</trans-unit>
+<trans-unit id="sdb73788b3c975f16">
+  <source>Auto</source>
+  <target>Auto</target>
+</trans-unit>
+<trans-unit id="h829bebc00474981a">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Experimental!<x id="1" equiv-text="&lt;/strong&gt;"/> Check the <x id="2" equiv-text="&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers#browser_compatibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Browser compatibility table<x id="3" equiv-text="&lt;/a&gt;"/> carefully before using this in production.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Experimental!<x id="1" equiv-text="&lt;/strong&gt;"/> Check the <x id="2" equiv-text="&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers#browser_compatibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Browser compatibility table<x id="3" equiv-text="&lt;/a&gt;"/> carefully before using this in production.</target>
+</trans-unit>
+<trans-unit id="sbdad52ad127f6a1a">
+  <source>Launch Handler</source>
+  <target>Launch Handler</target>
+</trans-unit>
+<trans-unit id="sba20935c39ec0410">
+  <source>Focus existing</source>
+  <target>Focus existing</target>
+</trans-unit>
+<trans-unit id="s9ce20803a48f1653">
+  <source>Navigate existing</source>
+  <target>Navigate existing</target>
+</trans-unit>
+<trans-unit id="s0ce1be90f6a285fc">
+  <source>Launch new</source>
+  <target>Launch new</target>
+</trans-unit>
+<trans-unit id="sa8f41c8c31970af1">
+  <source>Device Integration</source>
+  <target>Device Integration</target>
+</trans-unit>
+<trans-unit id="sb9621878e4655c94">
+  <source>Behaviour</source>
+  <target>Behavior</target>
+</trans-unit>
+<trans-unit id="sb321dddd2d6e46f9">
+  <source>Icons</source>
+  <target>Icons</target>
+</trans-unit>
+<trans-unit id="s0bdca49248ba4820">
+  <source>Shortcuts</source>
+  <target>Shortcuts</target>
+</trans-unit>
+<trans-unit id="s084ee449fa2ea16e">
+  <source>Protocol Handlers</source>
+  <target>Protocol Handlers</target>
+</trans-unit>
+<trans-unit id="s1802f2190f340cf1">
+  <source>Books</source>
+  <target>Books</target>
+</trans-unit>
+<trans-unit id="s233ae776268cd44b">
+  <source>Business</source>
+  <target>Business</target>
+</trans-unit>
+<trans-unit id="s1d19244f549ec535">
+  <source>Education</source>
+  <target>Education</target>
+</trans-unit>
+<trans-unit id="sb8f030e19d93bb79">
+  <source>Entertainment</source>
+  <target>Entertainment</target>
+</trans-unit>
+<trans-unit id="sdd70d07233c9c3ad">
+  <source>Finance</source>
+  <target>Finance</target>
+</trans-unit>
+<trans-unit id="s497a7adc39426917">
+  <source>Fitness</source>
+  <target>Fitness</target>
+</trans-unit>
+<trans-unit id="s07a00d850d958329">
+  <source>Food</source>
+  <target>Food</target>
+</trans-unit>
+<trans-unit id="se26c5c239197c01c">
+  <source>Games</source>
+  <target>Games</target>
+</trans-unit>
+<trans-unit id="sba76728e0293ddf6">
+  <source>Government</source>
+  <target>Government</target>
+</trans-unit>
+<trans-unit id="sbaf0a7c417e388af">
+  <source>Health</source>
+  <target>Health</target>
+</trans-unit>
+<trans-unit id="s70c38cde3ae9917c">
+  <source>Kids</source>
+  <target>Kids</target>
+</trans-unit>
+<trans-unit id="sbec848a6b81917c0">
+  <source>Lifestyle</source>
+  <target>Lifestyle</target>
+</trans-unit>
+<trans-unit id="s37b0eb26556af770">
+  <source>Magazines</source>
+  <target>Magazines</target>
+</trans-unit>
+<trans-unit id="sc63ac9a7839ff67c">
+  <source>Medical</source>
+  <target>Medical</target>
+</trans-unit>
+<trans-unit id="s9ca372a6096ddd54">
+  <source>Music</source>
+  <target>Music</target>
+</trans-unit>
+<trans-unit id="s07e6118e838b2e23">
+  <source>Navigation</source>
+  <target>Navigation</target>
+</trans-unit>
+<trans-unit id="s0fd75cc6a1aad906">
+  <source>News</source>
+  <target>News</target>
+</trans-unit>
+<trans-unit id="s56a561b67193c5f3">
+  <source>Personalization</source>
+  <target>Personalization</target>
+</trans-unit>
+<trans-unit id="sf1a78dd2508964c3">
+  <source>Photo</source>
+  <target>Photo</target>
+</trans-unit>
+<trans-unit id="sb0a26af3eb6ab88e">
+  <source>Politics</source>
+  <target>Politics</target>
+</trans-unit>
+<trans-unit id="s14a8b39ff9539cdd">
+  <source>Productivity</source>
+  <target>Productivity</target>
+</trans-unit>
+<trans-unit id="s01a8d45397ec133b">
+  <source>Security</source>
+  <target>Security</target>
+</trans-unit>
+<trans-unit id="s265c7ebce12823fd">
+  <source>Shopping</source>
+  <target>Shopping</target>
+</trans-unit>
+<trans-unit id="se73c59cc10f48c12">
+  <source>Social</source>
+  <target>Social</target>
+</trans-unit>
+<trans-unit id="s8a127bd255333eda">
+  <source>Sports</source>
+  <target>Sports</target>
+</trans-unit>
+<trans-unit id="sbb87af74ab3706b9">
+  <source>Travel</source>
+  <target>Travel</target>
+</trans-unit>
+<trans-unit id="se96eacb5f3d38c17">
+  <source>Utilities</source>
+  <target>Utilities</target>
+</trans-unit>
+<trans-unit id="s5dbcade048df45b3">
+  <source>Weather</source>
+  <target>Weather</target>
+</trans-unit>
+<trans-unit id="s92aca4da7aa7d7e7">
+  <source>A generator to help developers create Web App Manifests</source>
+  <target>A generator to help developers create Web App Manifests</target>
+</trans-unit>
+<trans-unit id="s4612c1d369a875bb">
+  <source>The purpose of your web app</source>
+  <target>The purpose of your web app</target>
+</trans-unit>
+<trans-unit id="s2cc7cd11d9b856cd">
+  <source>Categories</source>
+  <target>Categories</target>
+</trans-unit>
+<trans-unit id="s5e80701e129b84db">
+  <source>How stores should categorize your app</source>
+  <target>How stores should categorize your app</target>
+</trans-unit>
+<trans-unit id="ha6a9167988f42fd9">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Experimental!<x id="1" equiv-text="&lt;/strong&gt;"/> Check the <x id="2" equiv-text="&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/related_applications#browser_compatibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Browser compatibility table<x id="3" equiv-text="&lt;/a&gt;"/> carefully before using this in production.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Experimental!<x id="1" equiv-text="&lt;/strong&gt;"/> Check the <x id="2" equiv-text="&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/related_applications#browser_compatibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Browser compatibility table<x id="3" equiv-text="&lt;/a&gt;"/> carefully before using this in production.</target>
+</trans-unit>
+<trans-unit id="s2bc0c58f8542b479">
+  <source>Whether to show the native app banner before the web app install banner</source>
+  <target>Whether to show the native app banner before the web app install banner</target>
+</trans-unit>
+<trans-unit id="se7005489435aa3cf">
+  <source>Prefer related applications</source>
+  <target>Prefer related applications</target>
+</trans-unit>
+<trans-unit id="s04ae3c13e8c60fee">
+  <source>Store</source>
+  <target>Store</target>
+</trans-unit>
+<trans-unit id="s34e296ecc4b24e5f">
+  <source>Listing</source>
+  <target>Listing</target>
+</trans-unit>
+<trans-unit id="sdc8e7f2cf5dd00e6">
+  <source>Screenshots</source>
+  <target>Screenshots</target>
+</trans-unit>
+<trans-unit id="s970b7e63a0f0a05f">
+  <source>Related Applications</source>
+  <target>Related Applications</target>
+</trans-unit>
+<trans-unit id="sa240c73f579470c4">
+  <source>Manifest</source>
+  <target>Manifest</target>
+</trans-unit>
+<trans-unit id="s060954078711f29c">
+  <source>Helpful notes</source>
+  <target>Helpful notes</target>
+</trans-unit>
+<trans-unit id="hc820b13ecc2d65b3">
+  <source>Browsers will automatically promote installation with a banner when your app meets <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/install-criteria/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>install criteria<x id="1" equiv-text="&lt;/a&gt;"/></source>
+  <target>Browsers will automatically promote installation with a banner when your app meets <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/install-criteria/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>install criteria<x id="1" equiv-text="&lt;/a&gt;"/></target>
+</trans-unit>
+<trans-unit id="h5fb2f676dd442948">
+  <source>To detect if an installed app is launched, you can append a parameter to your Start URL or use the <x id="0" equiv-text="&lt;code&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>display-mode<x id="1" equiv-text="&lt;/a&gt;&lt;/code&gt;"/> CSS media query</source>
+  <target>To detect if an installed app is launched, you can append a parameter to your Start URL or use the <x id="0" equiv-text="&lt;code&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>display-mode<x id="1" equiv-text="&lt;/a&gt;&lt;/code&gt;"/> CSS media query</target>
+</trans-unit>
+<trans-unit id="sdafa38195f268c5d">
+  <source>For games, you can set fullscreen display and landscape orientation</source>
+  <target>For games, you can set fullscreen display and landscape orientation</target>
+</trans-unit>
+<trans-unit id="h0a4347592e582a00">
+  <source>If your app is under a subdirectory, set <x id="0" equiv-text="&lt;code&gt;"/>start_url<x id="1" equiv-text="&lt;/code&gt;"/> and <x id="2" equiv-text="&lt;code&gt;"/>scope<x id="3" equiv-text="&lt;/code&gt;"/> to that directory, otherwise launching will default to the root domain</source>
+  <target>If your app is under a subdirectory, set <x id="0" equiv-text="&lt;code&gt;"/>start_url<x id="1" equiv-text="&lt;/code&gt;"/> and <x id="2" equiv-text="&lt;code&gt;"/>scope<x id="3" equiv-text="&lt;/code&gt;"/> to that directory, otherwise launching will default to the root domain</target>
+</trans-unit>
+<trans-unit id="hb1b735e12a07c858">
+  <source>While most browsers implement the manifest, the <x id="0" equiv-text="&lt;code&gt;"/>&lt;meta&gt;<x id="1" equiv-text="&lt;/code&gt;"/> tags will help bridge that gap for those that don't</source>
+  <target>While most browsers implement the manifest, the <x id="0" equiv-text="&lt;code&gt;"/>&lt;meta&gt;<x id="1" equiv-text="&lt;/code&gt;"/> tags will help bridge that gap for those that don't</target>
+</trans-unit>
+<trans-unit id="s5b50817fbe313d60">
+  <source>You can promote your existing native app with the install banner by linking it as a related application</source>
+  <target>You can promote your existing native app with the install banner by linking it as a related application</target>
+</trans-unit>
+<trans-unit id="h260b621ed386d636">
+  <source>To control the install prompt or determine if it was successful, use the <x id="0" equiv-text="&lt;code&gt;&lt;a href=&quot;https://web.dev/customize-install/#beforeinstallprompt&quot;&gt;"/>beforeinstallprompt<x id="1" equiv-text="&lt;/a&gt;&lt;/code&gt;"/> event</source>
+  <target>To control the install prompt or determine if it was successful, use the <x id="0" equiv-text="&lt;code&gt;&lt;a href=&quot;https://web.dev/customize-install/#beforeinstallprompt&quot;&gt;"/>beforeinstallprompt<x id="1" equiv-text="&lt;/a&gt;&lt;/code&gt;"/> event</target>
+</trans-unit>
+<trans-unit id="hb1db47972eb7f3b7">
+  <source>When you add a <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/learn/pwa/service-workers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Service Worker<x id="1" equiv-text="&lt;/a&gt;"/>, your app can work offline and send notifications</source>
+  <target>When you add a <x id="0" equiv-text="&lt;a href=&quot;https://web.dev/learn/pwa/service-workers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Service Worker<x id="1" equiv-text="&lt;/a&gt;"/>, your app can work offline and send notifications</target>
+</trans-unit>
+<trans-unit id="h38dfc005c5de6171">
+  <source>Made by <x id="0" equiv-text="&lt;a href=&quot;https://github.com/tomitm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>tomitm<x id="1" equiv-text="&lt;/a&gt;"/> and <x id="2" equiv-text="&lt;a href=&quot;https://github.com/tomitm/appmanifest&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>contributors<x id="3" equiv-text="&lt;/a&gt;"/> with <x id="4" equiv-text="&lt;a href=&quot;https://webawesome.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Web Awesome<x id="5" equiv-text="&lt;/a&gt;"/>.</source>
+  <target>Made by <x id="0" equiv-text="&lt;a href=&quot;https://github.com/tomitm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>tomitm<x id="1" equiv-text="&lt;/a&gt;"/> and <x id="2" equiv-text="&lt;a href=&quot;https://github.com/tomitm/appmanifest&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>contributors<x id="3" equiv-text="&lt;/a&gt;"/> with <x id="4" equiv-text="&lt;a href=&quot;https://webawesome.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Web Awesome<x id="5" equiv-text="&lt;/a&gt;"/>.</target>
+</trans-unit>
+<trans-unit id="s919360ab0b4cbb0d">
+  <source>Add Icon</source>
+  <target>Add Icon</target>
+</trans-unit>
+<trans-unit id="s6e04f937a9b38cd0">
+  <source>Monochrome</source>
+  <target>Monochrome</target>
+</trans-unit>
+<trans-unit id="sef047dd8681aa439">
+  <source>Maskable</source>
+  <target>Maskable</target>
+</trans-unit>
+<trans-unit id="s33f85f24c0f5f008">
+  <source>Save</source>
+  <target>Save</target>
+</trans-unit>
+<trans-unit id="s5cc5d272c3c1edde">
+  <source>Add Shortcut</source>
+  <target>Add Shortcut</target>
+</trans-unit>
+<trans-unit id="s40524bb253debdc9">
+  <source>App Settings</source>
+  <target>App Settings</target>
+</trans-unit>
+<trans-unit id="s9d8b8aa2b404c2c8">
+  <source>Settings</source>
+  <target>Settings</target>
+</trans-unit>
+<trans-unit id="s96f409e8cd0b426d">
+  <source>Edit your settings</source>
+  <target>Edit your settings</target>
+</trans-unit>
+<trans-unit id="sf948d88c47a21f8b">
+  <source>Shortcut icons are not yet available.</source>
+  <target>Shortcut icons are not yet available.</target>
+</trans-unit>
+<trans-unit id="s4ccbbca5463da634">
+  <source>Add Protocol Handler</source>
+  <target>Add Protocol Handler</target>
+</trans-unit>
+<trans-unit id="scfcfab9f0c0aed58">
+  <source>Add Screenshot</source>
+  <target>Add Screenshot</target>
+</trans-unit>
+<trans-unit id="s5590dbf7e425789d">
+  <source>Label</source>
+  <target>Label</target>
+</trans-unit>
+<trans-unit id="s923aea37905f8432">
+  <source>An accessible label that may be used as alternative text</source>
+  <target>An accessible label that may be used as alternative text</target>
+</trans-unit>
+<trans-unit id="s7ebe6e1acc5d757a">
+  <source>Narrow</source>
+  <target>Narrow</target>
+</trans-unit>
+<trans-unit id="scd5bf30253fea7aa">
+  <source>Wide</source>
+  <target>Wide</target>
+</trans-unit>
+<trans-unit id="saf4071354a29ad62">
+  <source>Add Application</source>
+  <target>Add Application</target>
+</trans-unit>
+<trans-unit id="s09240e07b5b8d640">
+  <source>ID</source>
+  <target>ID</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

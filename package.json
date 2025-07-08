@@ -1,0 +1,26 @@
+{
+  "name": "appmanifest",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "i18n-extract": "lit-localize extract",
+    "i18n-build": "lit-localize build"
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "3.0.0-beta.2",
+    "@lit/context": "1.1.5",
+    "@lit/localize": "0.12.2",
+    "@types/web-app-manifest": "1.0.9",
+    "lit": "3.3.0"
+  },
+  "devDependencies": {
+    "@lit/localize-tools": "0.8.0",
+    "typescript": "5.8.3",
+    "vite": "7.0.2",
+    "vite-plugin-pwa": "1.0.1"
+  }
+}
