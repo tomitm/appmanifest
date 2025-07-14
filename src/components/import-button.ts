@@ -2,7 +2,8 @@ import { html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
-import type { WebAppManifest } from '../context';
+import type { WebAppManifest } from '../types';
+
 import { WamElement } from './element';
 
 export interface ImportEventDetail {
@@ -48,7 +49,7 @@ export class WamImportButton extends WamElement {
     console.log('Parsing file...');
     let manifest: WebAppManifest;
     try {
-      manifest = JSON.parse(content);
+      manifest = JSON.parse(content) as WebAppManifest;
       // TODO: validate/filter manifest; currently operating on good faith here...
       if (!manifest) return;
     } catch (e) {
@@ -57,22 +58,19 @@ export class WamImportButton extends WamElement {
     }
 
     console.log('File parsed', manifest);
-    const event = new CustomEvent<ImportEventDetail>('wam-import', {
-      detail: { data: manifest },
-      bubbles: true,
-      composed: true,
-    })
-    this.dispatchEvent(event);
+
+    const detail: ImportEventDetail = { data: manifest };
+    this.dispatch('wam-import', detail)
   }
 
   render() {
     return html`
       <wa-tooltip for="import">${msg('Edit an existing manifest file')}</wa-tooltip>
-      <wa-button id="import" size="small" appearance="plain" variant="brand" @click=${this.onClick}>
+      <wa-button id="import" size="small" appearance="plain" variant="brand" @click=${() => this.onClick()}>
         <wa-icon name="arrow-up-from-bracket" slot="end"></wa-icon>
         ${msg('Import')}
       </wa-button>
-      <input type="file" class="wa-visually-hidden-force" @change=${this.onUpload} />
+      <input type="file" class="wa-visually-hidden-force" @change=${(e: Event) => this.onUpload(e)} />
     `;
   }
 }

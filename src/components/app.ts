@@ -3,8 +3,9 @@ import { type PropertyValues } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 import type { ImportEventDetail } from './import-button';
+import type { FormEventDetail, ManifestMember, WebAppManifest } from '../types';
 
-import { editContext, manifestContext, type FormEventDetail, type WebAppManifest } from '../context';
+import { editContext, manifestContext } from '../context';
 import { WamElement } from './element';
 
 @customElement('wam-app')
@@ -20,20 +21,20 @@ export class WamApp extends WamElement {
   protected firstUpdated(_changedProperties: PropertyValues): void {
     super.firstUpdated(_changedProperties);
 
-    this.addEventListener('wam-form', this.onChange.bind(this) as EventListenerOrEventListenerObject);
-    this.addEventListener('wam-edit', this.onEdit.bind(this) as EventListenerOrEventListenerObject);
-    this.addEventListener('wam-import', this.onImport.bind(this) as EventListenerOrEventListenerObject);
+    this.subscribe('wam-form', this.onChange.bind(this) as EventListener);
+    this.subscribe('wam-edit', this.onEdit.bind(this) as EventListener);
+    this.subscribe('wam-import', this.onImport.bind(this) as EventListener);
   }
 
   // handle events from changing the top-level form or submitting a member form
   onChange(event: CustomEvent<FormEventDetail>): void {
     console.log('Change event:', event.detail);
-    const { data, member, index } = event.detail;
+    const { member, index } = event.detail;
     this.editor = {}; // discard editor
 
     // top-level change
     if (!member) {
-      const manifest = data as WebAppManifest;
+      const manifest = event.detail.data as WebAppManifest;
       console.log('Editing top-level manifest', Object.keys(manifest))
       const { icons, shortcuts, protocol_handlers, screenshots, related_applications } = this.data;
       this.data = { ...manifest, icons, shortcuts, protocol_handlers, screenshots, related_applications };
@@ -43,9 +44,8 @@ export class WamApp extends WamElement {
     // ensure valid value for member-level edits
     if (!['icons', 'shortcuts', 'protocol_handlers', 'screenshots', 'related_applications'].includes(member)) return;
 
-    if (!this.data[member]) {
-      this.data[member] = [];
-    }
+    const data = event.detail.data as ManifestMember;
+    this.data[member] ??= [];
 
     // new/append member
     if (typeof index === 'undefined' || !this.data[member][index]) {

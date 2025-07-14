@@ -3,9 +3,10 @@ import { customElement, property } from 'lit/decorators.js';
 import { consume } from '@lit/context';
 
 import type { ImageResource } from 'web-app-manifest';
+import type { WebAppManifest } from '../types';
 
 import { WamElement } from '../components/element';
-import { manifestContext, type WebAppManifest } from '../context';
+import { manifestContext } from '../context';
 
 @customElement('wam-head')
 export class WamHead extends WamElement {
@@ -15,7 +16,7 @@ export class WamHead extends WamElement {
   manifest: WebAppManifest = {};
 
   getImageAttrs(image: ImageResource) {
-    var attrs = [];
+    const attrs = [];
     if (image.type)    attrs.push(`type="${image.type}"`);
     if (image.sizes)   attrs.push(`sizes="${image.sizes}"`);
     if (image.src)     attrs.push(`href="${image.src}"`);
@@ -24,14 +25,14 @@ export class WamHead extends WamElement {
   }
 
   generateHead() {
-    var meta = [
+    const meta = [
       '<link rel="manifest" href="manifest.json">',
       '',
       '<meta name="mobile-web-app-capable" content="yes">',
       '<meta name="apple-mobile-web-app-capable" content="yes">'
     ];
 
-    var name = this.manifest.short_name || this.manifest.name;
+    const name = this.manifest.short_name ?? this.manifest.name;
     if (name) {
       meta.push(`<meta name="application-name" content="${name}">`);
       meta.push(`<meta name="apple-mobile-web-app-title" content="${name}">`);
@@ -53,7 +54,7 @@ export class WamHead extends WamElement {
       meta.push(''); // add spacer for aesthetics
 
       this.manifest.icons.forEach(icon => {
-        var attrs = this.getImageAttrs(icon);
+        const attrs = this.getImageAttrs(icon);
         meta.push(`<link rel="icon" ${attrs}>`);
         meta.push(`<link rel="apple-touch-icon" ${attrs}>`);
       });

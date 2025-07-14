@@ -3,8 +3,10 @@ import { customElement, property } from 'lit/decorators.js';
 import { consume } from '@lit/context';
 import { localized, msg } from '@lit/localize';
 
+import type { WebAppManifest } from '../types';
+
 import { WamElement } from '../components/element';
-import { manifestContext, type WebAppManifest } from '../context';
+import { manifestContext } from '../context';
 
 @customElement('wam-manifest')
 @localized()

@@ -85,7 +85,7 @@ function getPreferredLocale(userLocales: readonly string[], appLocales: readonly
 function autoSetLocale() {
   const preference = getPreferredLocale(navigator.languages, allLocales);
   if (!preference) return;
-  setLocale(preference);
+  void setLocale(preference);
 }
 autoSetLocale();
 

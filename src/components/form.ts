@@ -4,9 +4,9 @@ import { customElement, property, query } from 'lit/decorators.js'
 
 import type WaDialog from '@awesome.me/webawesome/dist/components/dialog/dialog.js';
 import type { ImportEventDetail } from './import-button';
-import type { ExternalApplicationResource, ImageResource, Screenshot, ShortcutItem } from 'web-app-manifest';
+import type { FormEventDetail, WebAppManifestOrMember } from '../types';
 
-import { editContext, type FormEventDetail, type ProtocolHandler, type WebAppManifest } from '../context';
+import { editContext } from '../context';
 import { inputsReady } from '../index';
 import { WamElement } from './element';
 
@@ -25,68 +25,65 @@ export class WamForm extends WamElement {
   protected firstUpdated(_changedProperties: PropertyValues): void {
     super.firstUpdated(_changedProperties);
 
-    inputsReady.then(() => {
-      this.form?.addEventListener(this.event, this.onFormChange.bind(this) as EventListenerOrEventListenerObject);
-    })
-    this.addEventListener('wam-import', this.onImport.bind(this) as EventListenerOrEventListenerObject);
+    void inputsReady.then(() => {
+      if (!this.form) return;
+      this.subscribe(this.event, this.onFormChange.bind(this), this.form);
+    });
+    this.subscribe('wam-import', this.onImport.bind(this) as EventListener)
 
     if (this.member) {
       this.dialog = document.querySelector(`#dialog-${this.member}`);
     }
-    this.dialog?.addEventListener('wa-after-hide', this.onDialogClose.bind(this) as EventListenerOrEventListenerObject);
+    if (this.dialog) {
+      this.subscribe('wa-after-hide', this.onDialogClose.bind(this) as EventListener, this.dialog)
+    }
   }
 
   willUpdate(changedProperties: PropertyValues) {
     if (changedProperties.has('edit')) this.onEdit();
   }
 
-  setValues(data: any) {
+  setValues(data: Record<string, unknown>) {
     if (!this.form) return;
+
+    // prepare values
+    const values: Record<string, unknown> = {};
     for (const key in data) {
-      if (!data.hasOwnProperty(key)) continue;
-
-      const input = this.form.elements[key as any] as HTMLInputElement | HTMLSelectElement;
-      if (!input) continue;
-
-      let value = data[key];
-      if (key === 'purpose' && value != null) {
+      if (!Object.prototype.hasOwnProperty.call(data, key)) continue;
+      const value = data[key];
+      if (key === 'purpose') {
         // ImageResource purpose is unusual; unlike other arrays, this one is a single string
-        value = value.split(' ')
+        values[key] = String(value).split(' ');
+        continue;
       }
-      if (input.type === 'checkbox') {
-        input.checked = !!value;
-      } else if (input.type === 'radio') {
-        // Iterate through radio buttons with the same name
-        const radioButtons = this.form.querySelectorAll(`input[name="${key}"]`) as NodeListOf<HTMLInputElement>;
-        radioButtons.forEach(radio => {
-          if (radio.value === value) {
-            radio.checked = true;
-          }
-        });
-      } else if (input.tagName === 'SELECT') {
-        const selectInput = input as HTMLSelectElement;
-        if (selectInput.multiple) {
-          // For multiple select, clear and then set selected options
-          Array.from(selectInput.options).forEach(option => {
-            option.selected = value.includes(option.value);
-          });
-        } else {
-          selectInput.value = value;
+      if (typeof value === 'object' && !Array.isArray(value) && value !== null) {
+        // handle objects such as launch_handler
+        for (const subkey in value) {
+          values[`${key}.${subkey}`] = (value as Record<string, unknown>)[subkey];
         }
-      } else {
-        // For most other input types (text, number, email, textarea)
-        input.value = value;
+        continue;
       }
+      values[key] = value;
+    }
+
+    // set input value
+    for (const key in values) {
+      if (!Object.prototype.hasOwnProperty.call(values, key)) continue;
+
+      const input = this.form.elements.namedItem(key) as HTMLInputElement | HTMLSelectElement;
+      if (!input) continue;
+      
+      input.value = values[key] as string;
     }
   }
 
   onFormChange(e: Event | SubmitEvent) {
     console.log('Form update event, parsing form to manifest')
     e.preventDefault();
-    const data: any = {};
-    const formData = new FormData(this.form as HTMLFormElement);
-    
-    for (const key of formData.keys() as FormDataIterator<keyof WebAppManifest | keyof ImageResource | keyof ShortcutItem | keyof ProtocolHandler | keyof Screenshot | keyof ExternalApplicationResource>) {
+    const data: Record<string, unknown> = {};
+    const formData = new FormData(this.form!);
+
+    for (const key of formData.keys()) {
       const value = formData.getAll(key).length > 1 ? formData.getAll(key) : formData.get(key);
       if (value === "" || value === null || typeof value === 'undefined') continue;
       if (value === 'on') {
@@ -95,14 +92,20 @@ export class WamForm extends WamElement {
       }
       if (key == 'purpose' && Array.isArray(value)) {
         // ImageResource purpose is unusual; unlike other arrays, this one is a single string
-        data[key] = value.join(' ');
+        data[key] = (value as string[]).join(' ');
+        continue;
+      }
+      if (key.includes('.')) {
+        const [ topKey, subKey ] = key.split('.');
+        data[topKey] ??= {};
+        (data[topKey] as Record<string, unknown>)[subKey] = value;
         continue;
       }
       data[key] = value;
     }
 
     const event = new CustomEvent<FormEventDetail>('wam-form', {
-      detail: { member: this.member, data, index: this.edit?.index },
+      detail: { member: this.member, data: data as WebAppManifestOrMember, index: this.edit?.index },
       bubbles: true,
       composed: true,
     })
@@ -125,7 +128,9 @@ export class WamForm extends WamElement {
 
     console.log('Form edit event', this.edit.member);
     this.dialog.open = true;
-    this.setValues(this.edit.data);
+
+    if (!this.edit.data) return;
+    this.setValues(this.edit.data as Record<string, unknown>);
   }
 
   onImport(e: CustomEvent<ImportEventDetail>) {

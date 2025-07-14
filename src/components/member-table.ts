@@ -4,7 +4,9 @@ import { choose } from 'lit/directives/choose.js';
 import { consume } from '@lit/context';
 import { localized, msg } from '@lit/localize';
 
-import { manifestContext, type ManifestMember, type FormEventDetail, type WebAppManifest } from '../context';
+import type { ManifestMember, FormEventDetail, WebAppManifest } from '../types';
+
+import { manifestContext } from '../context';
 import { PLATFORMS } from './select-platform';
 import { WamElement } from './element';
 
@@ -25,21 +27,13 @@ export class WamMemberTable extends WamElement {
   member: FormEventDetail['member'];
 
   handleEdit(index: number, data: ManifestMember) {
-    const event = new CustomEvent<FormEventDetail>('wam-edit', {
-      detail: { member: this.member, index, data },
-      bubbles: true,
-      composed: true
-    });
-    this.dispatchEvent(event);
+    const detail: FormEventDetail = { member: this.member, index, data };
+    this.dispatch('wam-edit', detail)
   }
 
   handleDelete(index: number) {
-    const event = new CustomEvent<FormEventDetail>('wam-form', {
-      detail: { member: this.member, index, data: null },
-      bubbles: true,
-      composed: true
-    });
-    this.dispatchEvent(event);
+    const detail: FormEventDetail = { member: this.member, index, data: null };
+    this.dispatch('wam-form', detail)
   }
 
   renderAddButton() {

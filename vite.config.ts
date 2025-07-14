@@ -8,6 +8,11 @@ export default defineConfig({
       injectRegister: 'inline',
       registerType: 'autoUpdate',
       manifest: false,
+      workbox: {
+        globPatterns: [
+          '**/*.{js,css,html,json,png}'
+        ]
+      }
     })
   ],
 });

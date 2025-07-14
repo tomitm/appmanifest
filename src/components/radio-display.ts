@@ -25,7 +25,7 @@ export class WamRadioDisplay extends WamElement {
       ['browser', () => msg('Typical browser tab or window')],
     ]);
     return html`
-      <wa-radio-group name="display" label=${msg('Display')} orientation="horizontal" hint=${hint} @change=${this.onChange}>
+      <wa-radio-group name="display" label=${msg('Display')} orientation="horizontal" hint=${hint} @change=${(e: Event) => this.onChange(e)}>
         <wa-radio appearance="button" value="standalone">${msg('Standalone')}</wa-radio>
         <wa-radio appearance="button" value="fullscreen">${msg('Fullscreen')}</wa-radio>
         <wa-radio appearance="button" value="minimal-ui">${msg('Minimal UI')}</wa-radio>

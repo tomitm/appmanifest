@@ -66,7 +66,7 @@ export class WamDeviceCard extends WamElement {
         </wa-callout>
 
         <!-- https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler -->
-        <wa-select name="launch_handler" value="" label=${msg('Launch Handler')} multiple with-clear>
+        <wa-select name="launch_handler.client_mode" value="" label=${msg('Launch Handler')} multiple with-clear>
           <wa-option value="auto">${msg('Auto')}</wa-option>
           <wa-option value="focus-existing">${msg('Focus existing')}</wa-option>
           <wa-option value="navigate-existing">${msg('Navigate existing')}</wa-option>
