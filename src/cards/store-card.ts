@@ -41,7 +41,7 @@ export class WamStoreCard extends WamElement {
 
     return html`
       <div class="wa-stack">
-        <wa-textarea name="description" label=${msg('Description')} placeholder=${msg('A generator to help developers create Web App Manifests')} hint=${msg('The purpose of your web app')}></wa-textarea>
+        <wa-textarea name="description" label=${msg('Description')} placeholder=${msg('A generator to help developers create Web App Manifests')} hint=${msg('The purpose of your web app')} resize="auto"></wa-textarea>
           
         <wa-select name="categories" label=${msg('Categories')} multiple with-clear hint=${msg('How stores should categorize your app')}>
           ${Object.keys(CATEGORIES).map(value => html`<wa-option value="${value}">${CATEGORIES[value]}</wa-option>`)}
